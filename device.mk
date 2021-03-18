@@ -6,6 +6,9 @@
 
 DEVICE_PATH := device/xiaomi/begonia
 
+# Bluetooth
+PRODUCT_SOONG_NAMESPACES += packages/apps/Bluetooth
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
